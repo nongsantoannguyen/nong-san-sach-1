@@ -29,12 +29,17 @@
     width: 100%;
     height: 200px; /* Cố định chiều cao ảnh */
     overflow: hidden;
+
+    overflow: hidden; /* Cực kỳ quan trọng: Giấu phần ảnh thừa khi phóng to */
+    border-top-left-radius: 12px; /* Bo góc trên bên trái */
+    border-top-right-radius: 12px; /* Bo góc trên bên phải */
 }
 
 .product-image img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Giúp ảnh không bị méo */
+    transition: transform 0.5s ease; /* Hiệu ứng mượt mà: mất 0.5 giây để phóng to/thu nhỏ */
 }
 
 /* Phần chứa thông tin chữ */
@@ -92,4 +97,9 @@
 
 .add-to-cart:hover {
     background-color: #388e3c; /* Màu xanh đậm hơn khi di chuột */
+}
+
+/* 3. Hiệu ứng khi di chuột vào ô sản phẩm (.product-card) */
+.product-card:hover .product-image img {
+    transform: scale(1.1); /* Phóng to ảnh lên 1.1 lần (110%) */
 }
