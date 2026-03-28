@@ -1,72 +1,88 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nông Sản Toàn Nguyễn - Thực Phẩm Sạch</title>
     <link rel="stylesheet" href="giaodien.css">
 </head>
-<body>
 
+<body>
+    <div id="cart-icon"
+        style="position: fixed; top: 20px; right: 20px; z-index: 1000; background: #ff9800; padding: 10px 20px; border-radius: 30px; color: white; cursor: pointer; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+        🛒 Giỏ hàng (<span id="cart-count">0</span>)
+    </div>
+    
     <header style="background-color: #4caf50; color: white; text-align: center; padding: 50px;">
         <h1>Chào mừng đến với Nông Sản Toàn Nguyễn</h1>
         <p>Cung cấp rau củ quả sạch mỗi ngày</p>
     </header>
 
-<section id="san-pham" style="padding: 50px 20px; background-color: #fff;">
-    <h2 style="color: #2e7d32; text-align: center; margin-bottom: 30px;">Sản Phẩm Nổi Bật</h2>
 
-    <div class="product-grid">
 
-        <div class="product-card">
-            <div class="product-image">
-                <img src="./Images/chanh-tuoi.webp" alt="Chanh Tươi">
-            </div>
-            <div class="product-info">
-                <h3>Chanh Tươi</h3>
-                <p class="description">Tươi, ngon, nhiều nước và ít hạt.</p>
-                <div class="price-row">
-                    <span class="price">35.000đ <small>/kg</small></span>
-                    <button class="add-to-cart">Mua ngay</button>
+    <section id="san-pham" style="padding: 50px 20px; background-color: #fff;">
+        <h2 style="color: #2e7d32; text-align: center; margin-bottom: 30px;">Sản Phẩm Nổi Bật</h2>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./Images/chanh-tuoi.webp" alt="Chanh Tươi">
+                </div>
+                <div class="product-info">
+                    <h3>Chanh Tươi</h3>
+                    <p class="description">Tươi, ngon, nhiều nước và ít hạt.</p>
+                    <div class="price-row">
+                        <span class="price">35.000đ <small>/kg</small></span>
+                        <!--<button class="add-to-cart">Mua ngay</button>-->
+                        <button class="add-to-cart" onclick="addToCart('Chanh Tươi', 35000)">Thêm vào giỏ</button>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="product-card">
-            <div class="product-image">
-                <img src="./Images/khoai-mo.webp" alt="Khoai Mỡ">
-            </div>
-            <div class="product-info">
-                <h3>Khoai Mỡ</h3>
-                <p class="description">Khoai bở, hương thơm.</p>
-                <div class="price-row">
-                    <span class="price">120.000đ <small>/kg</small></span>
-                    <button class="add-to-cart">Mua ngay</button>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./Images/khoai-mo.webp" alt="Khoai Mỡ">
+                </div>
+                <div class="product-info">
+                    <h3>Khoai Mỡ</h3>
+                    <p class="description">Khoai bở, hương thơm.</p>
+                    <div class="price-row">
+                        <span class="price">120.000đ <small>/kg</small></span>
+                       <!-- <button class="add-to-cart">Mua ngay</button> --> 
+                        <button class="add-to-cart" onclick="addToCart('Khoai Mỡ', 120000)">Thêm vào giỏ</button>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="product-card">
-            <div class="product-image">
-                <img src="./Images/cai-xoan.webp" alt="Cải Xoăn">
-            </div>
-            <div class="product-info">
-                <h3>Cải Xoăn</h3>
-                <p class="description">Giàu vitamin, phù hợp ăn sống.</p>
-                <div class="price-row">
-                    <span class="price">55.000đ <small>/kg</small></span>
-                    <button class="add-to-cart">Mua ngay</button>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./Images/cai-xoan.webp" alt="Cải Xoăn">
+                </div>
+                <div class="product-info">
+                    <h3>Cải Xoăn</h3>
+                    <p class="description">Giàu vitamin, phù hợp ăn sống.</p>
+                    <div class="price-row">
+                        <span class="price">55.000đ <small>/kg</small></span>
+                        <!--<button class="add-to-cart">Mua ngay</button> --> 
+                        <button class="add-to-cart" onclick="addToCart('Cải Xoăn', 55.000)">Thêm vào giỏ</button>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </div>
-</section>
+        </div>
+    </section>
 
     <footer style="text-align: center; padding: 20px; background: #2e7d32; color: white;">
         <p>© copyright by Toàn Nguyễn 2026 all rights reserved</p>
     </footer>
 
+
+
+
+
     <script src="script.js"></script>
 </body>
+
 </html>
