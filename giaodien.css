@@ -1,0 +1,95 @@
+/* Thiết lập cơ bản cho Grid sản phẩm */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Tự động điều chỉnh số cột */
+    gap: 30px; /* Khoảng cách giữa các ô */
+    max-width: 1200px;
+    margin: 0 auto; /* Căn giữa Grid */
+    padding: 0 20px;
+}
+
+/* Thiết lập cho từng ô sản phẩm (Card) */
+.product-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden; /* Bo tròn cả ảnh bên trong */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ nhẹ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng mượt mà khi di chuột */
+    border: 1px solid #eee;
+}
+
+/* Hiệu ứng khi di chuột vào ô sản phẩm */
+.product-card:hover {
+    transform: translateY(-5px); /* Nhô lên một chút */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Bóng đổ đậm hơn */
+}
+
+/* Phần chứa ảnh */
+.product-image {
+    width: 100%;
+    height: 200px; /* Cố định chiều cao ảnh */
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Giúp ảnh không bị méo */
+}
+
+/* Phần chứa thông tin chữ */
+.product-info {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.product-info h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.product-info .description {
+    margin: 0 0 20px 0;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    height: 40px; /* Cố định chiều cao mô tả */
+    overflow: hidden; /* Ẩn nếu mô tả quá dài */
+}
+
+/* Phần chứa giá và nút bấm */
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-info .price {
+    color: #e53935; /* Màu đỏ cho giá tiền */
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.product-info .price small {
+    color: #888;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+/* Nút bấm mua hàng */
+.add-to-cart {
+    background-color: #4caf50; /* Màu xanh lá tươi */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px; /* Bo tròn nút */
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #388e3c; /* Màu xanh đậm hơn khi di chuột */
+}

@@ -1,0 +1,72 @@
+PS D:\PRROJECT WEB NONG SAN SACH> git config --global user.name "nongsantoannguyen"
+PS D:\PRROJECT WEB NONG SAN SACH> git config --global user.email "toancdu2021@gmail.com"  
+PS D:\PRROJECT WEB NONG SAN SACH> git init
+
+Initialized empty Git repository in D:/PRROJECT WEB NONG SAN SACH/.git/
+PS D:\PRROJECT WEB NONG SAN SACH> git remote add origin https://github.com/toannongsansach/nong-san-sach-1.git
+PS D:\PRROJECT WEB NONG SAN SACH> git add
+
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+PS D:\PRROJECT WEB NONG SAN SACH> git add .
+PS D:\PRROJECT WEB NONG SAN SACH> git commit -m "Cập nhật giao diện"
+[master (root-commit) c9080db] Cập nhật giao diện
+
+PS D:\PRROJECT WEB NONG SAN SACH> git push origin main
+
+PS D:\PRROJECT WEB NONG SAN SACH> git add .
+PS D:\PRROJECT WEB NONG SAN SACH> git commit -m "Cập nhật giao diện" 
+
+-------------------------------------------------------------------
+PS D:\PRROJECT WEB NONG SAN SACH> git config --global user.name "nongsantoannguyen"
+PS D:\PRROJECT WEB NONG SAN SACH> git config --global user.email "toancdu2021@gmail.com"  
+PS D:\PRROJECT WEB NONG SAN SACH> git init
+Initialized empty Git repository in D:/PRROJECT WEB NONG SAN SACH/.git/
+PS D:\PRROJECT WEB NONG SAN SACH> git remote add origin https://github.com/toannongsansach/nong-san-sach-1.git
+PS D:\PRROJECT WEB NONG SAN SACH> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+PS D:\PRROJECT WEB NONG SAN SACH> git add .
+PS D:\PRROJECT WEB NONG SAN SACH> git commit -m "Cập nhật giao diện"
+[master (root-commit) c9080db] Cập nhật giao diện
+ 3 files changed, 44 insertions(+)
+ create mode 100644 giaodien.css
+ create mode 100644 index.html
+ create mode 100644 script.js
+PS D:\PRROJECT WEB NONG SAN SACH> git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/toannongsansach/nong-san-sach-1.git'
+PS D:\PRROJECT WEB NONG SAN SACH> git remote add origin https://github.com/nongsantoannguyen/nong-san-sach-1  
+error: remote origin already exists.
+PS D:\PRROJECT WEB NONG SAN SACH> git add .
+PS D:\PRROJECT WEB NONG SAN SACH> git commit -m "Cập nhật giao diện" 
+>>  
+>> git push origin main
+On branch master
+nothing to commit, working tree clean
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/toannongsansach/nong-san-sach-1.git'
+PS D:\PRROJECT WEB NONG SAN SACH> git branch -M main
+PS D:\PRROJECT WEB NONG SAN SACH> git push -u origin main
+remote: Permission to toannongsansach/nong-san-sach-1.git denied to toancdu.
+fatal: unable to access 'https://github.com/toannongsansach/nong-san-sach-1.git/': The requested URL returned error: 403
+PS D:\PRROJECT WEB NONG SAN SACH> git  remote -v
+origin  https://github.com/toannongsansach/nong-san-sach-1.git (fetch)
+origin  https://github.com/toannongsansach/nong-san-sach-1.git (push)
+PS D:\PRROJECT WEB NONG SAN SACH> git push -u origin main
+remote: Permission to toannongsansach/nong-san-sach-1.git denied to toancdu.
+fatal: unable to access 'https://github.com/toannongsansach/nong-san-sach-1.git/': The requested URL returned error: 403
+PS D:\PRROJECT WEB NONG SAN SACH> git branch -M main
+PS D:\PRROJECT WEB NONG SAN SACH> git push -u origin main
+remote: Permission to toannongsansach/nong-san-sach-1.git denied to toancdu.
+fatal: unable to access 'https://github.com/toannongsansach/nong-san-sach-1.git/': The requested URL returned error: 403
+PS D:\PRROJECT WEB NONG SAN SACH>
+
+-------------------------------------------
+git add .
+git commit -m "Nội dung bạn đã sửa"
+git push origin main
+git status 
+    +Nếu hiện chữ màu đỏ: Bạn cần git add.
+    +Nếu hiện chữ màu xanh: Bạn cần git commit.
